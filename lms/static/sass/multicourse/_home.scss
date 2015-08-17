@@ -9,20 +9,21 @@
   > header {
     @include linear-gradient($homepage__header--gradient__color--alpha, $homepage__header--gradient__color--bravo);
     background-size: cover;
-    background-image: $homepage-bg-image;
+    background-image: $homepage-banner-image;
     border-bottom: 1px solid $border-color-3;
     box-shadow: 0 1px 0 0 $course-header-bg, inset 0 -1px 5px 0 $shadow-l1;
     @include clearfix();
-    height: 460px;
+    height: 600px;
     overflow: hidden;
     margin-top: $header_image_margin;
     padding: 0;
     width: flex-grid(12);
+    background-position: 0px 67px;
 
     .outer-wrapper {
       @extend .animation-home-header-pop-up;
       margin: 0 auto;
-      padding: 240px ($baseline/2) 0;
+      padding: 260px ($baseline/2) 0;
       position: relative;
       max-width: 1200px;
       min-width: 760px;
