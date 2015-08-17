@@ -53,15 +53,17 @@ site_status_msg = get_site_status_msg(course_id)
     % if user.is_authenticated():
     <div class="left nav-global authenticated">
       <%block name="navigation_global_links_authenticated">
-          <li class="nav-global-01">
+<!--          <li class="nav-global-01">
             <a href="${marketing_link('HOW_IT_WORKS')}">${_("How it Works")}</a>
           </li>
+-->
           <li class="nav-global-02">
             <a href="${marketing_link('COURSES')}">${_("Find Courses")}</a>
           </li>
-          <li class="nav-global-03">
+<!--          <li class="nav-global-03">
             <a href="${marketing_link('SCHOOLS')}">${_("Schools & Partners")}</a>
           </li>
+-->
       </%block>
     </div>
 
@@ -97,6 +99,12 @@ site_status_msg = get_site_status_msg(course_id)
     % else:
     <ol class="left nav-global">
       <%block name="navigation_global_links">
+         <li class="nav-global-01">
+            <a href="${marketing_link('ABOUT')}">${_("About")}</a>
+         </li>
+          <li class="nav-global-02">
+            <a href="${marketing_link('TEAM')}">${_("Team")}</a>
+          </li>
         % if microsite.get_value('ENABLE_MKTG_SITE', settings.FEATURES.get('ENABLE_MKTG_SITE', False)):
           <li class="nav-global-01">
             <a href="${marketing_link('HOW_IT_WORKS')}">${_("How it Works")}</a>

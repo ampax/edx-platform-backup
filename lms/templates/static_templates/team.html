@@ -1,0 +1,143 @@
+<%! from django.utils.translation import ugettext as _ %>
+<%inherit file="../main.html" />
+<%namespace name='static' file='../static_content.html'/>
+<%block name="pagetitle">${_("Team")}</%block>
+<style>
+  ul.team-list{
+    list-style: none;
+  }
+  ul.team-list li img{
+    width: 240px;
+    height: 240px;
+    float: left;
+  }
+  ul.team-list li .desc{
+    margin-left: 280px;
+  }
+  ul.team-list li{
+    overflow: hidden;
+    font-size: 22px;
+    line-height: 30px;
+    font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+  }
+</style>
+<section class="container about">
+<h1>${_("Team")}</h1>
+<p style="font-size:22px">${_("Core panel at edLynX is drawn from leaders in education and other professional fields. Apart from preparing course material and creating content for edLynX the panel makes decisions about achieving objectives, goals, and execution of edLynX vision which is to bring best education to the remotest corners of the world and leave no child behind.")}</p>
+<p style="font-size:22px">
+<br>
+<ul class="team-list">
+<li>
+<div><img alt="Amit Kaushik" src="${static.url('images/edx-theme/amitkaushik-faculty.jpg')}"></div>
+<div class="desc">
+<p>
+<b>Amit Kaushik<br>
+MS Penn State University<br>
+B Tech, M Tech IIT Mumbai</b><br><br>
+Amit is an educator and entrepreneur who has co-founded several education ventures. Apart from entrepreneurial activities Amit is also Lead of Commodities Derivatives Technology for North America at the Barclays Investment Bank, New York.
+</p>
+</div>
+</li>
+<br>
+<br>
+
+<li>
+<div><img alt="Professor Ritesh Agarwal" src="${static.url('images/edx-theme/riteshagarwal-faculty.jpg')}"></div>
+<div class="desc">
+<p>
+<b>Professor Ritesh Agarwal<br>
+Post-Doctoral Research Harvard University<br>
+PhD University of Berkeley<br>
+MS University of Chicago<br>
+MSc IIT Kanpur<br><br>
+</b>
+Professor Agarwal is a leading faculty and researcher in the area of nano-technology at the University of Pennsylvania, an Ivy League university. Professor Agarwal has an exemplary record in research and teaching. Among many awards to his credit he won $ 1.5 million - 2010 National Institute of Health New Innovator award from President Barack Obama.
+<br>
+<a href="http://agarwal.seas.upenn.edu">http://agarwal.seas.upenn.edu</a>
+</p>
+</div>
+</li>
+<br>
+<br>
+
+<li>
+<div><img alt="Professor Delmar Larsen" src="${static.url('images/edx-theme/delmarlarsen-faculty.jpg')}"></div>
+<div class="desc">
+<p>
+<b>Professor Delmar Larsen <br>
+PhD University of Berkeley<br>
+BS University of Washington<br><br>
+</b>
+Professor Larsen’s research focuses on light activated biological functions. The questions his group is working to answer require a multi-disciplinary approach that incorporates tools from molecular biology, physical chemistry, and computational sciences.
+<br>
+Dr. Larsen is founder of ChemWiki <a href="http://chemwiki.ucdavis.edu">http://chemwiki.ucdavis.edu</a> a hyperlibrary that is revolutionizing the way student’s access and learn from textbooks.  
+<br><a href="http://larsenlab.ucdavis.edu">http://larsenlab.ucdavis.edu</a>
+</p>
+</div>
+</li>
+<br>
+<br>
+
+<li>
+<div><img alt="Aparna Agarwal" src="${static.url('images/edx-theme/aparnaagarwal-faculty.jpg')}"></div>
+<div class="desc">
+<p>
+<b>Dr. Aparna Agarwal, PhD<br>
+PhD University of Pittsburgh<br>
+MSc IIT Kanpur<br>
+BSc (Hons) Delhi University<br><br>
+</b>
+Dr. Agarwal is a senior scientist at a leading pharmaceutical research lab currently working on cancer drug research. Dr. Agarwal is a graduate of IIT Kanpur. She did her doctoral work at the University of Pittsburgh, USA. She did post-doctoral work at the Rutgers University, NJ, USA.
+</p>
+</div>
+</li>
+<br>
+<br>
+
+<li>
+<div><img alt="Katie Keene" src="${static.url('images/edx-theme/katiekeene-faculty.jpg')}"></div>
+<div class="desc">
+<p>
+<b>Katie Keene, CPT<br>
+MA Sports and Fitness Administration University of Houston<br>
+BS University of Florida
+</b><br><br>
+Katie is a veteran Personal Trainer and Fitness Nutrition Specialist, helping clients across the United States. She has mentored and taught aspiring personal trainers in university and has held numerous fitness & wellness lectures for Fortune 500 clients. Katie is passionate about health, fitness, and overall wellness. She enjoys the hands-on aspects of personal training as well as the behind the scenes work of fitness programming and management. She also enjoys writing, specifically within fitness. <br>
+<a href="www.katiekeenefitness.com">www.katiekeenefitness.com</a>
+</p>
+</div>
+</li>
+<br>
+<br>
+
+<li>
+<div><img alt="Girish Mallapragada " src="${static.url('images/edx-theme/girishmallapragada-faculty.jpg')}"></div>
+<div class="desc">
+<p>
+<b>Professor Girish Mallapragada <br>
+PhD Penn State University<br>
+PGDM IIM<br>
+BS Osmania University<br><br>
+</b>
+Professor Mallapragada is a Professor of Marketing at the business school of Indiana University, USA. His research is focused on studying modern collaborative networks using state of art statistical methods.<br>
+<a href="http://kelley.iu.edu/facultyglobal/directory/FacultyProfile.cfm?netID=gmallapr">http://kelley.iu.edu/facultyglobal/directory/FacultyProfile.cfm?netID=gmallapr</a>
+</p>
+</div>
+</li>
+<br>
+<br>
+
+<li>
+<div><img alt="Anoop Kaushik" src="${static.url('images/edx-theme/anoopkaushik-faculty.jpg')}"></div>
+<div class="desc">
+<p>
+<b>Anoop Kaushik<br>
+B Tech IIT Kanpur</br><br>
+</b>
+Anoop is Vice President at the largest asset manager in the world, BlackRock, Inc.  New York City. Anoop is a co-founder of qoll and a graduate of IIT Kanpur. He has an extensive experience in building cutting edge technologies at the leading investment banks and asset managers such as Morgan Stanley USA and Blackrock USA.
+</p>
+</div>
+</li>
+</p>
+</section>
+

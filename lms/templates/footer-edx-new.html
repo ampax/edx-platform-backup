@@ -16,23 +16,17 @@
       <div class="footer-about-copy">
         <p>
           ${_(
-            "{EdX} offers interactive online classes and MOOCs from the world's best universities. "
-            "Online courses from {MITx}, {HarvardX}, {BerkeleyX}, {UTx} and many other universities. "
-            "Topics include biology, business, chemistry, computer science, economics, finance, "
-            "electronics, engineering, food and nutrition, history, humanities, law, literature, "
-            "math, medicine, music, philosophy, physics, science, statistics and more. {EdX} is a "
-            "non-profit online initiative created by founding partners {Harvard} and {MIT}."
+            "{edLynX} offers interactive online classes from the world's best educators. At edLynX graduates and educators from the leading institutions such as Harvard, IIT, IIM, Chicago, Penn, Berkeley, Davis, and Penn State have come together to create a world class course content and delivery using modern teaching methodologies, knowledge, and cutting edge technologies."
             ).format(
-            EdX="EdX", Harvard="Harvard", MIT="MIT", HarvardX="HarvardX", MITx="MITx",
-            BerkeleyX="BerkeleyX", UTx="UTx"
+            edLynX="EdLynX"
           )}
         </p>
       </div>
 
       <div class="footer-about-copyright">
       	## Using "edX Inc." explicitly here for copyright purposes (settings.PLATFORM_NAME is just "edX", and this footer is only used on edx.org)
-      	<p>&copy; ${settings.COPYRIGHT_YEAR} edX Inc.</p>
-
+      	<p>&copy; ${settings.COPYRIGHT_YEAR} edlynx, all rights reserved.</p>
+<!--
       	## Site operators: Please do not remove this paragraph! This attributes back to edX and makes your acknowledgement of edX's trademarks clear.
       	<p>
       	  ## Translators: 'EdX', 'edX', and 'Open edX' are trademarks of 'edX Inc.'. Please do not translate any of these trademarks and company names.
@@ -41,25 +35,31 @@
       	      link_end=u"</span></a>"
       	  )}
       	</p>
+-->
       </div>
 
       <div class="footer-about-links">
-        <a href="${marketing_link('TOS')}"><span class="copy">${_("Terms of Service and Honor Code")}</span></a>
-        <a href="${marketing_link('PRIVACY')}"><span class="copy">${_("Privacy Policy")}</span> <span class="note">${_("(Revised 4/16/2014)")}</span></a>
+        <a href="${marketing_link('TOS')}"><span class="copy">${_("Terms of Service ")}</span></a>
+        <a href="${marketing_link('PRIVACY')}"><span class="copy">${_("Privacy Policy")}</span></a>
       </div>
     </div>
 
     <nav class="footer-nav" role="navigation" aria-label="About Us">
-      <h2 class="footer-nav-title">${_("About edX")}</h2>
+      <h2 class="footer-nav-title">${_("About edLynX")}</h2>
 
       <div class="footer-nav-links">
         <a href="${marketing_link('ABOUT')}"><span class="copy">${_("About")}</span></a>
-        <a href="${marketing_link('NEWS')}"><span class="copy">${_("News")}</span></a>
+<!--        <a href="${marketing_link('NEWS')}"><span class="copy">${_("News")}</span></a>
+-->
         <a href="${marketing_link('CONTACT')}"><span class="copy">${_("Contact")}</span></a>
         <a href="${marketing_link('FAQ')}"><span class="copy">${_("FAQ")}</span></a>
-        <a href="${marketing_link('BLOG')}"><span class="copy">${_("edX Blog")}</span></a>
+<!--        <a href="${marketing_link('BLOG')}"><span class="copy">${_("edX Blog")}</span></a>
         <a href="${marketing_link('DONATE')}"><span class="copy">${_("Donate to edX")}</span></a>
-        <a href="${marketing_link('JOBS')}"><span class="copy">${_("Jobs at edX")}</span></a>
+-->
+        <a href="${marketing_link('TEAM')}"><span class="copy">${_("Team")}</span></a>
+        <a href="${marketing_link('REFUND-CANCELLATION')}"><span class="copy">${_("Refund and Cancellation Policy")}</span></a>
+        <a href="${marketing_link('DELIVERY-SHIPPING')}"><span class="copy">${_("Delivery and Shipping Policy")}</span></a>
+        <a href="${marketing_link('PRICING-STRUCTURE')}"><span class="copy">${_("Product/Service Details And Pricing Structure")}</span></a>
       </div>
     </nav>
 
@@ -81,7 +81,7 @@
         </a>
         ## Translators: This is the website name of www.meetup.com. Please
         ## translate this the way that Meetup advertises in your language.
-        <a href="${settings.PLATFORM_MEETUP_URL}" title="${_("Meetup")}" rel="noreferrer">
+<!--        <a href="${settings.PLATFORM_MEETUP_URL}" title="${_("Meetup")}" rel="noreferrer">
           <i class="icon fa fa-calendar element-invisible"></i>
           <span class="copy">${_("Meetup")}</span>
         </a>
@@ -97,6 +97,7 @@
           <i class="icon fa fa-google-plus element-invisible"></i>
           <span class="copy">${_("Google+")}</span>
         </a>
+-->
       </div>
 
       % if settings.FEATURES.get('ENABLE_FOOTER_MOBILE_APP_LINKS'):

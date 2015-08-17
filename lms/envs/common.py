@@ -1628,6 +1628,10 @@ MKTG_URL_LINK_MAP = {
     'PRESS': 'press',
     'BLOG': 'blog',
     'DONATE': 'donate',
+    'TEAM': 'team',
+    'PRICING-STRUCTURE': 'pricing-structure',
+    'DELIVERY-SHIPPING': 'delivery-shipping',
+    'REFUND-CANCELLATION': 'refund-cancellation',
 
     # Verified Certificates
     'WHAT_IS_VERIFIED_CERT': 'verified-certificate',
