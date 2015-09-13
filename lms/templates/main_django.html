@@ -3,7 +3,7 @@
 <html lang="{{LANGUAGE_CODE}}">
 <head>
   <meta charset="UTF-8">
-  {% block title %}<title>IIT JEE Video Lectures | Created by Top World Scientists</title>{% endblock %}
+  {% block title %}<title>{{ platform_name }}</title>{% endblock %}
 
  <link rel="icon" type="image/x-icon" href="{% favicon_path %}" />
 
@@ -27,7 +27,6 @@
   <![endif]-->
 
   <meta name="path_prefix" content="{{EDX_ROOT_URL}}">
-  <meta name="description" content="Precise, efficient, and highly effective strategies to IIT JEE and AIPMT. Invented by top American Scientists. Sign Up for free - limited time offer.">
 </head>
 
 <body class="{% block bodyclass %}{% endblock %} lang_{{LANGUAGE_CODE}}">
